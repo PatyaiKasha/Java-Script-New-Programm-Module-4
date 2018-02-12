@@ -23,14 +23,17 @@ function addKeyboardLayout(alphabet) {
     let k3 = alphabet.slice(23);
 
     key.push(k1, k2, k3);
-    console.log('key', key);
+
+    // console.log('key', key);
 
     return key;
 
 }
 
 function getRandCharInRow(row) {
-    // body... 
+
+    console.log(row);
+
 }
 
 function getRandCharInAlph(alphabet) {
@@ -38,8 +41,10 @@ function getRandCharInAlph(alphabet) {
 }
 
 
-addKeyboardLayout(alphabet);
+// addKeyboardLayout(alphabet);
 
-// getRandCharInRow(key[0]);
+getRandCharInRow();
 
 // getRandCharInAlph(alphabet);
+
+console.log(addKeyboardLayout(alphabet));
