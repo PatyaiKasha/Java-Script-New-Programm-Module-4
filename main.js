@@ -24,7 +24,7 @@ function addKeyboardLayout(alphabet) {
 
     key.push(k1, k2, k3);
 
-    // console.log(key);
+    console.log('key ---', key);
 
     return key;
 }
@@ -33,20 +33,25 @@ function getRandCharInRow(row) {
 
     addKeyboardLayout(alphabet);
 
-    // Math.floor(Math.random() * possible.length)
+    let rnd = Math.floor(Math.random() * key[row].length);
 
-    console.log(key[row]);
-    console.log(Math.floor(Math.random() * key[row].length));
+    console.log("key[row][rnd] ---", key[row][rnd]);
 
-    return key[row];
+    return key[row][rnd];
 }
 
 function getRandCharInAlph(alphabet) {
-    // body...
+
+    let rnd = Math.floor(Math.random() * alphabet.length);
+
+    console.log("alphabet[rnd] ---", alphabet[rnd]);
+
+    return alphabet[rnd];
+
 }
 
-// addKeyboardLayout(alphabet);
+addKeyboardLayout(alphabet);
 
 getRandCharInRow(0);
 
-// getRandCharInAlph(alphabet);
+getRandCharInAlph(alphabet);
