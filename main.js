@@ -14,7 +14,7 @@ const key = [];
 //     "zxcvbnm,./" //2
 // ];
 
-function addKeyboardLayout(alphabet) {
+let addKeyboardLayout = (alphabet) => {
 
     let k1 = alphabet.slice(0, 12);
 
@@ -29,9 +29,11 @@ function addKeyboardLayout(alphabet) {
     return key;
 }
 
-function getRandCharInRow(row) {
+let getRandCharInRow = (row) => {
 
     addKeyboardLayout(alphabet);
+
+    console.log(key);
 
     let rnd = Math.floor(Math.random() * key[row].length);
 
@@ -40,7 +42,7 @@ function getRandCharInRow(row) {
     return key[row][rnd];
 }
 
-function getRandCharInAlph(alphabet) {
+let getRandCharInAlph = (alphabet) => {
 
     let rnd = Math.floor(Math.random() * alphabet.length);
 
